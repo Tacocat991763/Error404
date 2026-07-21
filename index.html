@@ -35,12 +35,12 @@
                                                                                                         <p>The page you are looking for does not exist.</p>
                                                                                                         <!-- This is a comment! -->
                                                                                                         <script>
-                                                                                                            const randomNumber = Math.floor(Math.random() * 10000) + 1;
+                                                                                                            const randomNumber = Math.floor(Math.random() * 1000) + 1;
                                                                                                             const message = document.getElementById("message");
 
                                                                                                             if (randomNumber === 1) {
                                                                                                                 message.textContent = "Error 405: I didn't feel like letting you in.";
-                                                                                                            } else if (randomNumber >5) {
+                                                                                                            } else if (randomNumber >7) {
                                                                                                                  message.textContent = "Error 404: Page Not Found.";
                                                                                                             } else if (randomNumber === 2) {
                                                                                                                 message.textContent = "Error 200: Hey wait no it's actually here! Just kidding, it's not.";
@@ -50,6 +50,12 @@
                                                                                                                 message.textContent = "Error 0: Nothing happened. ARE YOU HAPPY NOW SAMANTHA?"
                                                                                                             } else if (randomNumber === 5) {
                                                                                                                 message.textContent = "Error 0_0: Hi Bob! (if your name is not bob this isn't for you, BUT YOU KNOW WHO YOU ARE BOB!)";
+                                                                                                            } else if (randomNumber === 6) {
+                                                                                                                message.textContent = "Error: Error code not found"
+                                                                                                            } else if (randomNumber === 7) {
+                                                                                                                message.textContent = "Error 418: I'm a teapot (You think I am joking, look up 'Error 418')"
+                                                                                                            } else if (randomNumber === 0) {
+                                                                                                                message.textContent = "Error: this is impossible, how did you get this error?"
                                                                                                             }
                                                                                                         </script>
                                                                                                     </div>
